@@ -28,3 +28,8 @@ C:\Ninja\WiseWork\OpenWeather\obj\Debug\net8.0\refint\OpenWeather.dll
 C:\Ninja\WiseWork\OpenWeather\obj\Debug\net8.0\OpenWeather.pdb
 C:\Ninja\WiseWork\OpenWeather\obj\Debug\net8.0\OpenWeather.genruntimeconfig.cache
 C:\Ninja\WiseWork\OpenWeather\obj\Debug\net8.0\ref\OpenWeather.dll
+C:\Ninja\WiseWork\OpenWeather\bin\Debug\net8.0\output\web.config
+C:\Ninja\WiseWork\OpenWeather\bin\Debug\net8.0\output\appsettings.Development.json
+C:\Ninja\WiseWork\OpenWeather\bin\Debug\net8.0\output\appsettings.json
+C:\Ninja\WiseWork\OpenWeather\bin\Debug\net8.0\output\OpenWeather.deps.json
+C:\Ninja\WiseWork\OpenWeather\bin\Debug\net8.0\output\OpenWeather.runtimeconfig.json

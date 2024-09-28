@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "N9nZOTJrxT5Qb61+gt2kNmqS93a+UOQEUNjQaIrTwdw=",
+  "Hash": "8LVC9c345kOA412x/VG8NQj5TWeE1JPgPnset/Wcw4Y=",
   "Source": "OpenWeather",
   "BasePath": "_content/OpenWeather",
   "Mode": "Default",
@@ -129,6 +129,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.png"
+    },
+    {
+      "Identity": "C:\\Ninja\\WiseWork\\OpenWeather\\wwwroot\\index.html",
+      "SourceId": "OpenWeather",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Ninja\\WiseWork\\OpenWeather\\wwwroot\\",
+      "BasePath": "_content/OpenWeather",
+      "RelativePath": "index.html",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\index.html"
     }
   ]
 }
