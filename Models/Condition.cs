@@ -1,5 +1,5 @@
 
-namespace BlazorWeatherApp.Models;
+namespace OpenWeather.Models;
 public class Condition
 {
     public required string Text { get; set; }

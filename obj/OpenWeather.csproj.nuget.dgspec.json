@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Ninja\\WiseWork\\blazor-weather-app\\BlazorWeatherApp\\BlazorWeatherApp.csproj": {}
+    "C:\\Ninja\\WiseWork\\OpenWeather\\OpenWeather.csproj": {}
   },
   "projects": {
-    "C:\\Ninja\\WiseWork\\blazor-weather-app\\BlazorWeatherApp\\BlazorWeatherApp.csproj": {
+    "C:\\Ninja\\WiseWork\\OpenWeather\\OpenWeather.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Ninja\\WiseWork\\blazor-weather-app\\BlazorWeatherApp\\BlazorWeatherApp.csproj",
-        "projectName": "BlazorWeatherApp",
-        "projectPath": "C:\\Ninja\\WiseWork\\blazor-weather-app\\BlazorWeatherApp\\BlazorWeatherApp.csproj",
+        "projectUniqueName": "C:\\Ninja\\WiseWork\\OpenWeather\\OpenWeather.csproj",
+        "projectName": "OpenWeather",
+        "projectPath": "C:\\Ninja\\WiseWork\\OpenWeather\\OpenWeather.csproj",
         "packagesPath": "C:\\Users\\ninjaonsteroids\\.nuget\\packages\\",
-        "outputPath": "C:\\Ninja\\WiseWork\\blazor-weather-app\\BlazorWeatherApp\\obj\\",
+        "outputPath": "C:\\Ninja\\WiseWork\\OpenWeather\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

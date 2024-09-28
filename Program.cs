@@ -1,6 +1,6 @@
-using BlazorWeatherApp.Models;
-using BlazorWeatherApp.Components;
-using BlazorWeatherApp.Services;
+using OpenWeather.Models;
+using OpenWeather.Components;
+using OpenWeather.Services;
 using Microsoft.Extensions.Options;
 var builder = WebApplication.CreateBuilder(args);
 

@@ -1,4 +1,4 @@
-namespace BlazorWeatherApp.Models;
+namespace OpenWeather.Models;
 public class WeatherApiOptions
 {
  public required string BaseUrl { get; set; }

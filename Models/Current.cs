@@ -1,4 +1,4 @@
-namespace BlazorWeatherApp.Models;
+namespace OpenWeather.Models;
 public class Current
 {
     public long Last_Updated_Epoch { get; set; }

@@ -1,4 +1,4 @@
-namespace BlazorWeatherApp.Models;
+namespace OpenWeather.Models;
 public class WeatherResponse
 {
     public required Location Location { get; set; }

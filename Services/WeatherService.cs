@@ -1,7 +1,7 @@
-namespace BlazorWeatherApp.Services;
+namespace OpenWeather.Services;
 
 using Microsoft.Extensions.Options;
-using BlazorWeatherApp.Models;
+using OpenWeather.Models;
 public class WeatherService
 {
     private readonly HttpClient _httpClient;

@@ -1,40 +1,40 @@
 {
   "Files": [
     {
-      "Id": "C:\\Ninja\\WiseWork\\blazor-weather-app\\BlazorWeatherApp\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\BlazorWeatherApp.bundle.scp.css",
-      "PackagePath": "staticwebassets\\BlazorWeatherApp.bundle.scp.css"
+      "Id": "C:\\Ninja\\WiseWork\\OpenWeather\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\OpenWeather.bundle.scp.css",
+      "PackagePath": "staticwebassets\\OpenWeather.bundle.scp.css"
     },
     {
-      "Id": "C:\\Ninja\\WiseWork\\blazor-weather-app\\BlazorWeatherApp\\wwwroot\\app.css",
+      "Id": "C:\\Ninja\\WiseWork\\OpenWeather\\wwwroot\\app.css",
       "PackagePath": "staticwebassets\\app.css"
     },
     {
-      "Id": "C:\\Ninja\\WiseWork\\blazor-weather-app\\BlazorWeatherApp\\wwwroot\\bootstrap\\bootstrap.min.css",
+      "Id": "C:\\Ninja\\WiseWork\\OpenWeather\\wwwroot\\bootstrap\\bootstrap.min.css",
       "PackagePath": "staticwebassets\\bootstrap\\bootstrap.min.css"
     },
     {
-      "Id": "C:\\Ninja\\WiseWork\\blazor-weather-app\\BlazorWeatherApp\\wwwroot\\bootstrap\\bootstrap.min.css.map",
+      "Id": "C:\\Ninja\\WiseWork\\OpenWeather\\wwwroot\\bootstrap\\bootstrap.min.css.map",
       "PackagePath": "staticwebassets\\bootstrap\\bootstrap.min.css.map"
     },
     {
-      "Id": "C:\\Ninja\\WiseWork\\blazor-weather-app\\BlazorWeatherApp\\wwwroot\\favicon.png",
+      "Id": "C:\\Ninja\\WiseWork\\OpenWeather\\wwwroot\\favicon.png",
       "PackagePath": "staticwebassets\\favicon.png"
     },
     {
-      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.BlazorWeatherApp.Microsoft.AspNetCore.StaticWebAssets.props",
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.OpenWeather.Microsoft.AspNetCore.StaticWebAssets.props",
       "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
     },
     {
-      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.BlazorWeatherApp.props",
-      "PackagePath": "build\\BlazorWeatherApp.props"
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.OpenWeather.props",
+      "PackagePath": "build\\OpenWeather.props"
     },
     {
-      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.BlazorWeatherApp.props",
-      "PackagePath": "buildMultiTargeting\\BlazorWeatherApp.props"
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.OpenWeather.props",
+      "PackagePath": "buildMultiTargeting\\OpenWeather.props"
     },
     {
-      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.BlazorWeatherApp.props",
-      "PackagePath": "buildTransitive\\BlazorWeatherApp.props"
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.OpenWeather.props",
+      "PackagePath": "buildTransitive\\OpenWeather.props"
     }
   ],
   "ElementsToRemove": []

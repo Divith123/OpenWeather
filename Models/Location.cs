@@ -1,5 +1,5 @@
 
-namespace BlazorWeatherApp.Models;
+namespace OpenWeather.Models;
 public class Location
 {
     public required string Name { get; set; }
