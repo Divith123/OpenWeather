@@ -1,0 +1,7 @@
+C:\Ninja\WiseWork\OpenWeather\bin\Release\net8.0\publish\OpenWeather.exe
+C:\Ninja\WiseWork\OpenWeather\bin\Release\net8.0\publish\appsettings.Development.json
+C:\Ninja\WiseWork\OpenWeather\bin\Release\net8.0\publish\appsettings.json
+C:\Ninja\WiseWork\OpenWeather\bin\Release\net8.0\publish\OpenWeather.dll
+C:\Ninja\WiseWork\OpenWeather\bin\Release\net8.0\publish\OpenWeather.deps.json
+C:\Ninja\WiseWork\OpenWeather\bin\Release\net8.0\publish\OpenWeather.runtimeconfig.json
+C:\Ninja\WiseWork\OpenWeather\bin\Release\net8.0\publish\OpenWeather.pdb
