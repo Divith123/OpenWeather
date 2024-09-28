@@ -1,0 +1,41 @@
+﻿@page "/"
+@rendermode InteractiveServer
+@inject WeatherService WeatherService
+  
+<PageTitle>Home</PageTitle>
+<div class="container">
+    <div class="row">
+        <div class="col-md-6 offset-md-3">
+             <div class="card">
+                <div class="card-body">
+                     <h3 class="card-title">OpenWeather Search</h3>
+                     <div class="input-group mb-3">
+                        <input @bind ="city" class="form-control">
+                        <button @onclick="GetWeather" class="btn btn-primary">Search</button>
+                    </div>
+                    @if(weatherResponse != null){
+                    <div>
+                        <h4> @weatherResponse.Location.Name</h4>
+                       <p> Temperature: @weatherResponse.Current.Temp_C</p>
+                       <p>Condition: @weatherResponse.Current.Condition.Text</p>
+                        <p>Wind: @weatherResponse.Current.Wind_Kph km/h (@weatherResponse.Current.Wind_Mph mph) from @weatherResponse.Current.Wind_Dir</p>
+                        <p>Humidity: @weatherResponse.Current.Humidity%</p>
+                           <img src="@("https:" + weatherResponse.Current.Condition.Icon)" alt="" />
+                 
+
+                  </div>
+                    } 
+
+                  </div>
+             </div>
+    </div>
+    </div>
+</div>
+@code{
+
+private string city = "";
+private WeatherResponse? weatherResponse;
+async Task GetWeather(){
+     weatherResponse = await WeatherService.GetWeatherAsync(city);
+}
+} 
