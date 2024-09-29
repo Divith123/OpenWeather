@@ -1,5 +1,11 @@
 ﻿@inherits LayoutComponentBase
 
+<!-- Background video setup -->
+<video autoplay muted loop id="bg-video">
+    <source src="https://motionbgs.com/media/3525/rainy-weather.960x540.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+</video>
+
 <div class="page">
     <div class="sidebar">
         <NavMenu />
@@ -7,17 +13,11 @@
 
     <main>
         <div class="top-row px-4">
-            <a href="https://github.com/Divith123/OpenWeather" target="_blank">Source</a>
+            <a href="https://github.com/Divith123/OpenWeather" target="_blank" class="source-link">Source</a>
         </div>
 
         <article class="content px-4">
             @Body
         </article>
     </main>
-</div>
-
-<div id="blazor-error-ui">
-    An unhandled error has occurred.
-    <a href="" class="reload">Reload</a>
-    <a class="dismiss">🗙</a>
 </div>
