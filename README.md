@@ -1,8 +1,6 @@
 
 # OpenWeather
 
-**[OpenWeather on GitHub](https://github.com/Divith123/OpenWeather)**
-
 ## Overview
 
 **OpenWeather** is a weather forecasting web application that fetches real-time weather data from the OpenWeather API. It provides detailed weather information such as temperature, humidity, and weather conditions for cities across the globe.
