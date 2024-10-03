@@ -7,7 +7,17 @@
     min-height: 100%;
     z-index: -1; /* Ensures video is behind all content */
     object-fit: cover;
-    filter: brightness(1.0); /* Optional: darkens video slightly */
+    filter: brightness(0.7) contrast(1.2); /* Darken the video for better readability */
+    animation: fadeIn 10s ease-in-out infinite alternate; /* Smooth fade-in and fade-out animation */
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
 
 /* Page Layout and Structure */
@@ -16,40 +26,79 @@
     display: flex;
     flex-direction: column;
     z-index: 1; /* Ensures page content is above the video */
+    animation: slideIn 0.5s ease-out; /* Slide-in animation for the entire page */
+}
+
+@keyframes slideIn {
+    0% {
+        transform: translateY(100%);
+    }
+    100% {
+        transform: translateY(0);
+    }
 }
 
 main {
     flex: 1;
     background: transparent; /* Keep content area transparent to show the video background */
+    padding: 20px;
+    border-radius: 10px; /* Smooth corners for main content */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow to lift content */
+    backdrop-filter: blur(10px); /* Gives a glassy effect */
 }
 
 /* Sidebar */
 .sidebar {
-    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 0%);
+    background: rgba(0, 0, 0, 0.7); /* Semi-transparent background for sidebar */
     z-index: 2; /* Keeps sidebar above the video */
+    box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.3); /* Subtle shadow for the sidebar */
+    animation: fadeInLeft 1s ease-out;
+}
+
+@keyframes fadeInLeft {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
 }
 
 /* Top Row Styling */
 .top-row {
-    background-color: transparent;
-    border-bottom: 1px solid rgba(255, 255, 255, 0);
+    background-color: rgba(0, 0, 0, 0.6); /* Slightly dark background */
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
     justify-content: flex-end;
     height: 3.5rem;
     display: flex;
     align-items: center;
     z-index: 2; /* Ensures top row stays above the video */
+    padding: 0 1.5rem;
+    animation: slideDown 0.6s ease-out;
 }
 
-/* Source Link and Top Row Styling */
+@keyframes slideDown {
+    0% {
+        transform: translateY(-50px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
 .top-row ::deep a, .top-row ::deep .btn-link {
     white-space: nowrap;
     margin-left: 1.5rem;
     text-decoration: none;
     color: rgb(255, 255, 255); /* Set text to white */
+    font-weight: 500;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
 }
 
 .top-row ::deep a:hover, .top-row ::deep .btn-link:hover {
     text-decoration: underline;
+    color: #FFD700; /* Highlight text on hover */
 }
 
 .top-row ::deep a:first-child {
@@ -65,6 +114,7 @@ main {
 
     .top-row ::deep a, .top-row ::deep .btn-link {
         margin-left: 0;
+        font-size: 1rem; /* Slightly smaller font on mobile */
     }
 }
 
@@ -102,15 +152,27 @@ main {
 
 /* Blazor Error UI */
 #blazor-error-ui {
-    background: rgba(255, 255, 255, 0.1);
+    background: rgba(0, 0, 0, 0.7); /* Darker background for error UI */
     bottom: 0;
-    box-shadow: 0 -1px 2px rgba(255, 255, 255, 0.2);
+    box-shadow: 0 -1px 2px rgba(255, 255, 255, 0.3);
     display: none;
     left: 0;
     padding: 0.6rem 1.25rem 0.7rem 1.25rem;
     position: fixed;
     width: 100%;
     z-index: 1000; /* Keeps error UI on top of everything */
+    color: white;
+    font-size: 0.9rem;
+    animation: fadeInError 1s ease;
+}
+
+@keyframes fadeInError {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
 
 #blazor-error-ui .dismiss {
@@ -118,4 +180,10 @@ main {
     position: absolute;
     right: 0.75rem;
     top: 0.5rem;
+    color: #FFD700; /* Golden color for dismiss button */
+    transition: color 0.3s ease;
+}
+
+#blazor-error-ui .dismiss:hover {
+    color: #FF4500; /* Red color on hover */
 }

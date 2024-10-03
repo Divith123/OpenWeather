@@ -8,7 +8,17 @@
     min-height: 100%;
     z-index: -1; /* Ensures video is behind all content */
     object-fit: cover;
-    filter: brightness(1.0); /* Optional: darkens video slightly */
+    filter: brightness(0.7) contrast(1.2); /* Darken the video for better readability */
+    animation: fadeIn-b-cua50oadsd 10s ease-in-out infinite alternate; /* Smooth fade-in and fade-out animation */
+}
+
+@keyframes fadeIn-b-cua50oadsd {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
 
 /* Page Layout and Structure */
@@ -17,40 +27,79 @@
     display: flex;
     flex-direction: column;
     z-index: 1; /* Ensures page content is above the video */
+    animation: slideIn-b-cua50oadsd 0.5s ease-out; /* Slide-in animation for the entire page */
+}
+
+@keyframes slideIn-b-cua50oadsd {
+    0% {
+        transform: translateY(100%);
+    }
+    100% {
+        transform: translateY(0);
+    }
 }
 
 main[b-cua50oadsd] {
     flex: 1;
     background: transparent; /* Keep content area transparent to show the video background */
+    padding: 20px;
+    border-radius: 10px; /* Smooth corners for main content */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow to lift content */
+    backdrop-filter: blur(10px); /* Gives a glassy effect */
 }
 
 /* Sidebar */
 .sidebar[b-cua50oadsd] {
-    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 0%);
+    background: rgba(0, 0, 0, 0.7); /* Semi-transparent background for sidebar */
     z-index: 2; /* Keeps sidebar above the video */
+    box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.3); /* Subtle shadow for the sidebar */
+    animation: fadeInLeft-b-cua50oadsd 1s ease-out;
+}
+
+@keyframes fadeInLeft-b-cua50oadsd {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
 }
 
 /* Top Row Styling */
 .top-row[b-cua50oadsd] {
-    background-color: transparent;
-    border-bottom: 1px solid rgba(255, 255, 255, 0);
+    background-color: rgba(0, 0, 0, 0.6); /* Slightly dark background */
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
     justify-content: flex-end;
     height: 3.5rem;
     display: flex;
     align-items: center;
     z-index: 2; /* Ensures top row stays above the video */
+    padding: 0 1.5rem;
+    animation: slideDown-b-cua50oadsd 0.6s ease-out;
 }
 
-/* Source Link and Top Row Styling */
+@keyframes slideDown-b-cua50oadsd {
+    0% {
+        transform: translateY(-50px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
 .top-row[b-cua50oadsd]  a, .top-row[b-cua50oadsd]  .btn-link {
     white-space: nowrap;
     margin-left: 1.5rem;
     text-decoration: none;
     color: rgb(255, 255, 255); /* Set text to white */
+    font-weight: 500;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
 }
 
 .top-row[b-cua50oadsd]  a:hover, .top-row[b-cua50oadsd]  .btn-link:hover {
     text-decoration: underline;
+    color: #FFD700; /* Highlight text on hover */
 }
 
 .top-row[b-cua50oadsd]  a:first-child {
@@ -66,6 +115,7 @@ main[b-cua50oadsd] {
 
     .top-row[b-cua50oadsd]  a, .top-row[b-cua50oadsd]  .btn-link {
         margin-left: 0;
+        font-size: 1rem; /* Slightly smaller font on mobile */
     }
 }
 
@@ -103,15 +153,27 @@ main[b-cua50oadsd] {
 
 /* Blazor Error UI */
 #blazor-error-ui[b-cua50oadsd] {
-    background: rgba(255, 255, 255, 0.1);
+    background: rgba(0, 0, 0, 0.7); /* Darker background for error UI */
     bottom: 0;
-    box-shadow: 0 -1px 2px rgba(255, 255, 255, 0.2);
+    box-shadow: 0 -1px 2px rgba(255, 255, 255, 0.3);
     display: none;
     left: 0;
     padding: 0.6rem 1.25rem 0.7rem 1.25rem;
     position: fixed;
     width: 100%;
     z-index: 1000; /* Keeps error UI on top of everything */
+    color: white;
+    font-size: 0.9rem;
+    animation: fadeInError-b-cua50oadsd 1s ease;
+}
+
+@keyframes fadeInError-b-cua50oadsd {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
 
 #blazor-error-ui .dismiss[b-cua50oadsd] {
@@ -119,6 +181,12 @@ main[b-cua50oadsd] {
     position: absolute;
     right: 0.75rem;
     top: 0.5rem;
+    color: #FFD700; /* Golden color for dismiss button */
+    transition: color 0.3s ease;
+}
+
+#blazor-error-ui .dismiss:hover[b-cua50oadsd] {
+    color: #FF4500; /* Red color on hover */
 }
 /* _content/OpenWeather/Components/Layout/NavMenu.razor.rz.scp.css */
 /* Navbar Toggler */

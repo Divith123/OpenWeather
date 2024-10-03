@@ -1,9 +1,3 @@
-C:\Ninja\WiseWork\OpenWeather\obj\Debug\net8.0\OpenWeather.GeneratedMSBuildEditorConfig.editorconfig
-C:\Ninja\WiseWork\OpenWeather\obj\Debug\net8.0\OpenWeather.AssemblyInfoInputs.cache
-C:\Ninja\WiseWork\OpenWeather\obj\Debug\net8.0\OpenWeather.AssemblyInfo.cs
-C:\Ninja\WiseWork\OpenWeather\obj\Debug\net8.0\OpenWeather.csproj.CoreCompileInputs.cache
-C:\Ninja\WiseWork\OpenWeather\obj\Debug\net8.0\OpenWeather.MvcApplicationPartsAssemblyInfo.cache
-C:\Ninja\WiseWork\OpenWeather\obj\Debug\net8.0\OpenWeather.sourcelink.json
 C:\Ninja\WiseWork\OpenWeather\bin\Debug\net8.0\appsettings.Development.json
 C:\Ninja\WiseWork\OpenWeather\bin\Debug\net8.0\appsettings.json
 C:\Ninja\WiseWork\OpenWeather\bin\Debug\net8.0\OpenWeather.staticwebassets.runtime.json
@@ -12,6 +6,12 @@ C:\Ninja\WiseWork\OpenWeather\bin\Debug\net8.0\OpenWeather.deps.json
 C:\Ninja\WiseWork\OpenWeather\bin\Debug\net8.0\OpenWeather.runtimeconfig.json
 C:\Ninja\WiseWork\OpenWeather\bin\Debug\net8.0\OpenWeather.dll
 C:\Ninja\WiseWork\OpenWeather\bin\Debug\net8.0\OpenWeather.pdb
+C:\Ninja\WiseWork\OpenWeather\obj\Debug\net8.0\OpenWeather.GeneratedMSBuildEditorConfig.editorconfig
+C:\Ninja\WiseWork\OpenWeather\obj\Debug\net8.0\OpenWeather.AssemblyInfoInputs.cache
+C:\Ninja\WiseWork\OpenWeather\obj\Debug\net8.0\OpenWeather.AssemblyInfo.cs
+C:\Ninja\WiseWork\OpenWeather\obj\Debug\net8.0\OpenWeather.csproj.CoreCompileInputs.cache
+C:\Ninja\WiseWork\OpenWeather\obj\Debug\net8.0\OpenWeather.MvcApplicationPartsAssemblyInfo.cache
+C:\Ninja\WiseWork\OpenWeather\obj\Debug\net8.0\OpenWeather.sourcelink.json
 C:\Ninja\WiseWork\OpenWeather\obj\Debug\net8.0\staticwebassets.build.json
 C:\Ninja\WiseWork\OpenWeather\obj\Debug\net8.0\staticwebassets.development.json
 C:\Ninja\WiseWork\OpenWeather\obj\Debug\net8.0\staticwebassets\msbuild.OpenWeather.Microsoft.AspNetCore.StaticWebAssets.props
@@ -28,8 +28,3 @@ C:\Ninja\WiseWork\OpenWeather\obj\Debug\net8.0\refint\OpenWeather.dll
 C:\Ninja\WiseWork\OpenWeather\obj\Debug\net8.0\OpenWeather.pdb
 C:\Ninja\WiseWork\OpenWeather\obj\Debug\net8.0\OpenWeather.genruntimeconfig.cache
 C:\Ninja\WiseWork\OpenWeather\obj\Debug\net8.0\ref\OpenWeather.dll
-C:\Ninja\WiseWork\OpenWeather\bin\Debug\net8.0\output\web.config
-C:\Ninja\WiseWork\OpenWeather\bin\Debug\net8.0\output\appsettings.Development.json
-C:\Ninja\WiseWork\OpenWeather\bin\Debug\net8.0\output\appsettings.json
-C:\Ninja\WiseWork\OpenWeather\bin\Debug\net8.0\output\OpenWeather.deps.json
-C:\Ninja\WiseWork\OpenWeather\bin\Debug\net8.0\output\OpenWeather.runtimeconfig.json

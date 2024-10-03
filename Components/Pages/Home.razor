@@ -1,41 +1,177 @@
 ﻿@page "/"
 @rendermode InteractiveServer
 @inject WeatherService WeatherService
-  
+
 <PageTitle>Home</PageTitle>
+
+<style>
+    /* Main Card Styling */
+    .hover-card {
+        position: relative;
+        background: rgba(255, 255, 255, 0.9); /* Slight transparency */
+        border-radius: 25px; /* Curvy corners */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 12px rgba(0, 0, 0, 0.15);
+        transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+        backdrop-filter: blur(10px); /* Adds a blurred background effect */
+        overflow: hidden;
+    }
+
+    .hover-card:hover {
+        transform: scale(1.05) rotateX(3deg) rotateY(3deg); /* Slight 3D transformation */
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2), 0 12px 24px rgba(0, 0, 0, 0.3); /* Stronger shadow on hover */
+    }
+
+    /* 3D effect on Mouse Move */
+    .hover-card {
+        will-change: transform, box-shadow;
+        perspective: 1000px;
+    }
+
+    .hover-card .card-body {
+        transform-style: preserve-3d;
+        transition: transform 0.1s ease-out;
+    }
+
+    .hover-card:active .card-body {
+        transform: scale(1.05);
+    }
+
+    /* Mouse movement interaction */
+    .hover-card {
+        transform: perspective(500px);
+    }
+
+    .hover-card:hover {
+        transform: perspective(500px) scale(1.05) rotateX(5deg) rotateY(5deg);
+    }
+
+    .hover-card .card-body {
+        transition: transform 0.2s ease-in-out;
+    }
+
+    /* Add soft glow on hover */
+    .hover-card:hover {
+        box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2), 0 18px 36px rgba(0, 0, 0, 0.25);
+    }
+
+    /* Input and Button Styling */
+    .input-group {
+        border-radius: 20px;
+        overflow: hidden;
+    }
+
+    .input-group .form-control {
+        border: none;
+        border-radius: 20px 0 0 20px;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        transition: all 0.3s ease;
+    }
+
+    .input-group .form-control:focus {
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+        border-color: #007bff;
+    }
+
+    .input-group .btn-primary {
+        border: none;
+        border-radius: 0 20px 20px 0;
+        background-color: #007bff;
+        transition: all 0.3s ease;
+    }
+
+    .input-group .btn-primary:hover {
+        background-color: #0056b3;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    /* Weather Info Card */
+    .weather-info {
+        background: rgba(255, 255, 255, 0.9);
+        border-radius: 15px;
+        padding: 20px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(10px);
+        margin-top: 20px;
+    }
+
+    .weather-info h4, .weather-info p {
+        transition: color 0.3s ease;
+    }
+
+    .weather-info:hover h4, .weather-info:hover p {
+        color: #007bff;
+    }
+
+    /* Rounded Image */
+    .weather-info .img-fluid {
+        transition: transform 0.5s ease;
+    }
+
+    .weather-info:hover .img-fluid {
+        transform: scale(1.1);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    }
+
+    /* Input Animation on Button Hover */
+    .input-group .btn-primary {
+        transition: background-color 0.4s ease, transform 0.3s ease;
+    }
+
+    .input-group .btn-primary:hover {
+        background-color: #0056b3;
+        transform: scale(1.1);
+    }
+
+    .input-group .btn-primary:active {
+        transform: scale(1);
+    }
+</style>
+
 <div class="container">
-    <div class="row">
-        <div class="col-md-6 offset-md-3">
-             <div class="card">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <div class="card shadow-lg border-0 rounded-5 bg-light mt-5 p-4 hover-card">
                 <div class="card-body">
-                     <h3 class="card-title">OpenWeather Search</h3>
-                     <div class="input-group mb-3">
-                        <input @bind ="city" class="form-control">
-                        <button @onclick="GetWeather" class="btn btn-primary">Search</button>
+                    <h3 class="card-title text-center mb-4 text-primary">OpenWeather Search</h3>
+                    
+                    <!-- Input and Search Button with Animation -->
+                    <div class="input-group mb-4">
+                        <input @bind="city" class="form-control form-control-lg border-primary rounded-pill" placeholder="Enter city name..." aria-label="City name">
+                        <button @onclick="GetWeather" class="btn btn-primary btn-lg ms-2">Search</button>
                     </div>
-                    @if(weatherResponse != null){
-                    <div>
-                        <h4> @weatherResponse.Location.Name</h4>
-                       <p> Temperature: @weatherResponse.Current.Temp_C</p>
-                       <p>Condition: @weatherResponse.Current.Condition.Text</p>
-                        <p>Wind: @weatherResponse.Current.Wind_Kph km/h (@weatherResponse.Current.Wind_Mph mph) from @weatherResponse.Current.Wind_Dir</p>
-                        <p>Humidity: @weatherResponse.Current.Humidity%</p>
-                           <img src="@("https:" + weatherResponse.Current.Condition.Icon)" alt="" />
-                 
 
-                  </div>
-                    } 
-
-                  </div>
-             </div>
-    </div>
+                    @if (weatherResponse != null)
+                    {
+                        <div class="weather-info p-4 rounded-3 bg-white shadow-sm">
+                            <h4 class="text-center text-success">@weatherResponse.Location.Name</h4>
+                            <p class="lead text-center text-info">Temperature: <span class="fw-bold">@weatherResponse.Current.Temp_C &deg;C</span></p>
+                            <p class="text-center text-muted">Condition: @weatherResponse.Current.Condition.Text</p>
+                            <p class="text-center text-warning">Wind: @weatherResponse.Current.Wind_Kph km/h (@weatherResponse.Current.Wind_Mph mph) from @weatherResponse.Current.Wind_Dir</p>
+                            <p class="text-center text-primary">Humidity: @weatherResponse.Current.Humidity%</p>
+                            <div class="text-center mt-3">
+                                <img src="@("https:" + weatherResponse.Current.Condition.Icon)" alt="Weather Icon" class="img-fluid rounded-circle shadow-sm"/>
+                            </div>
+                        </div>
+                    }
+                    else
+                    {
+                        <p class="text-center text-muted">Enter a city to get the weather forecast.</p>
+                    }
+                </div>
+            </div>
+        </div>
     </div>
 </div>
-@code{
 
-private string city = "";
-private WeatherResponse? weatherResponse;
-async Task GetWeather(){
-     weatherResponse = await WeatherService.GetWeatherAsync(city);
+@code {
+    private string city = "";
+    private WeatherResponse? weatherResponse;
+
+    async Task GetWeather()
+    {
+        if (!string.IsNullOrWhiteSpace(city))
+        {
+            weatherResponse = await WeatherService.GetWeatherAsync(city);
+        }
+    }
 }
-} 

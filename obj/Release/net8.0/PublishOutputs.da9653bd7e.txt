@@ -1,7 +1,0 @@
-C:\Ninja\WiseWork\OpenWeather\output\OpenWeather.exe
-C:\Ninja\WiseWork\OpenWeather\output\appsettings.Development.json
-C:\Ninja\WiseWork\OpenWeather\output\appsettings.json
-C:\Ninja\WiseWork\OpenWeather\output\OpenWeather.dll
-C:\Ninja\WiseWork\OpenWeather\output\OpenWeather.deps.json
-C:\Ninja\WiseWork\OpenWeather\output\OpenWeather.runtimeconfig.json
-C:\Ninja\WiseWork\OpenWeather\output\OpenWeather.pdb
