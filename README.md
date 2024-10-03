@@ -1,6 +1,3 @@
-Here's a complete and attractive `README.md` for your project. It includes all necessary sections, presented clearly and professionally, without using emojis.
-
----
 
 # OpenWeather
 
@@ -89,7 +86,7 @@ Once you have the application running, you can view weather data by entering the
 
 This project leverages the following technologies and libraries:
 
-- **.NET Core 7.0**: Framework for building the web application.
+- **.NET Core 8.0**: Framework for building the web application.
 - **Blazor WebAssembly**: For building interactive web UIs using C# instead of JavaScript.
 - **OpenWeather API**: Provides real-time weather data.
 - **C#**: Main programming language used.
