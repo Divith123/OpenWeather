@@ -1,0 +1,231 @@
+﻿@page "/Check"
+@page "/Check/{cityName}"
+@rendermode InteractiveServer
+
+@using System.Text.Json
+@using System.Text.Json.Serialization
+@inject IHttpClientFactory ClientFactory
+
+@using MongoDB.Driver
+@using LiveWeather.Models
+@using LiveWeather.DatabaseController
+@using LiveWeather.Singletons
+@inject DatabaseController weatherController
+@inject UserStateManager userState
+
+<PageTitle>Weather</PageTitle>
+
+<MudContainer MaxWidth="MaxWidth.Large" Class="my-5">
+    <MudText Typo="Typo.h3" Align="Align.Center" Class="mb-4">Weather</MudText>
+    <MudText Typo="Typo.body1" Align="Align.Center" Class="mb-4">This component demonstrates showing data.</MudText>
+
+    <MudCard Class="rounded-lg w-100 my-4 py-4" Elevation="5">
+        <MudContainer MaxWidth="MaxWidth.Small">
+            <MudTextField Class="mt-2" @bind-Value="@cityName" Label="Enter City Name" Variant="Variant.Outlined" FullWidth></MudTextField>
+            <MudNumericField Class="mt-2" @bind-Value="@days" Label="Enter Days" Variant="Variant.Outlined" FullWidth></MudNumericField>
+            <MudButton Class="mt-2" OnClick="@GetWeatherData" Variant="Variant.Filled" Color="Color.Primary" FullWidth>Search</MudButton>
+        </MudContainer>
+    </MudCard>
+
+    @if (forecasts != null)
+    {
+    <MudText Class="my-2 text-center" Typo="Typo.h5">@forecasts?.Location?.Name, @forecasts?.Location?.Country</MudText>
+
+    @if (userState.IsLoggedIn())
+    {
+    if (isFavorite)
+    {
+    <MudButton Variant="Variant.Outlined" StartIcon="@Icons.Material.Filled.Favorite" Color="Color.Error" OnClick="@RemoveFavourite">Remove Favourite</MudButton>
+    }
+    else
+    {
+    <MudButton Variant="Variant.Filled" StartIcon="@Icons.Material.Filled.Favorite" Color="Color.Error" OnClick="@AddFavorite">Add to Favourite</MudButton>
+    }
+    }
+    }
+
+    @if (!showError)
+    {
+    if (forecasts?.Forecast?.Forecastday != null)
+    {
+    <MudTable T="@ForecastDay" Items="@forecasts?.Forecast?.Forecastday" Hover="true" Class="mb-4">
+        <HeaderContent>
+            <MudTh>Date</MudTh>
+            <MudTh>Temp. (C)</MudTh>
+            <MudTh>Temp. (F)</MudTh>
+            <MudTh>Summary</MudTh>
+        </HeaderContent>
+        <RowTemplate>
+            <MudTd DataLabel="Date">@context.Date</MudTd>
+            <MudTd DataLabel="Temp. (C)">@context?.Day?.AvgtempC</MudTd>
+            <MudTd DataLabel="Temp. (F)">@context?.Day?.AvgtempF</MudTd>
+            <MudTd DataLabel="Summary">
+                <img src="@context?.Day?.Condition?.Icon" class="w-5" /> @context?.Day?.Condition?.Text
+            </MudTd>
+        </RowTemplate>
+    </MudTable>
+    }
+    }
+    else
+    {
+    if (cityName != null && forecasts?.Forecast?.Forecastday == null)
+    {
+    <MudAlert Severity="Severity.Error">Error loading data</MudAlert>
+    }
+    }
+</MudContainer>
+
+@code 
+{
+private WeatherForecast? forecasts;
+private bool showError = false;
+
+[Parameter]
+public string? cityName { get; set; } = "";
+
+private int days = 5;
+private bool isFavorite = false;
+
+protected override async Task OnInitializedAsync()
+{
+if (cityName != "")
+{
+await GetWeatherData();
+}
+}
+
+private async Task GetWeatherData()
+{
+var request = new HttpRequestMessage(HttpMethod.Get, "http://api.weatherapi.com/v1/forecast.json?key=d1e31ec431a142479cd60429243009&q=" + cityName + "&days=" + days + "&aqi=no&alerts=no");
+request.Headers.Add("Accept", "application/json");
+
+var client = ClientFactory.CreateClient();
+var response = await client.SendAsync(request);
+
+if (response.IsSuccessStatusCode)
+{
+showError = false;
+using var responseStream = await response.Content.ReadAsStreamAsync();
+forecasts = await JsonSerializer.DeserializeAsync<WeatherForecast>(responseStream);
+if (userState.IsLoggedIn())
+{
+Favourite fav = weatherController.GetFavourite(forecasts?.Location?.Name, userState.User.Id).Result;
+isFavorite = fav != null;
+}
+}
+else
+{
+showError = true;
+}
+}
+
+private void AddFavorite()
+{
+Favourite favourite = new Favourite()
+{
+City = forecasts?.Location?.Name,
+Country = forecasts?.Location?.Country,
+};
+weatherController.AddToFavourite(favourite, userState.User.Id);
+isFavorite = true;
+}
+
+public void RemoveFavourite()
+{
+Favourite fav = new()
+{
+City = forecasts?.Location?.Name,
+Country = forecasts?.Location?.Country,
+};
+Favourite favToRemove = weatherController.GetFavourite(forecasts?.Location?.Name, userState.User.Id).Result;
+weatherController.RemoveFavourite(userState.User.Id, favToRemove);
+isFavorite = false;
+}
+
+public class WeatherForecast
+{
+[JsonPropertyName("location")]
+public Location? Location { get; set; }
+
+[JsonPropertyName("current")]
+public Current? Current { get; set; }
+
+[JsonPropertyName("forecast")]
+public Forecast? Forecast { get; set; }
+}
+
+public class Location
+{
+[JsonPropertyName("name")]
+public string? Name { get; set; }
+
+[JsonPropertyName("region")]
+public string? Region { get; set; }
+
+[JsonPropertyName("country")]
+public string? Country { get; set; }
+
+[JsonPropertyName("lat")]
+public float? Lat { get; set; }
+
+[JsonPropertyName("lon")]
+public float? Lon { get; set; }
+
+[JsonPropertyName("tz_id")]
+public string? TzId { get; set; }
+
+[JsonPropertyName("localtime_epoch")]
+public long? LocaltimeEpoch { get; set; }
+
+[JsonPropertyName("localtime")]
+public string? Localtime { get; set; }
+}
+
+public class Current
+{
+[JsonPropertyName("temp_c")]
+public float? TempC { get; set; }
+
+[JsonPropertyName("temp_f")]
+public float? TempF { get; set; }
+
+[JsonPropertyName("condition")]
+public Condition? Condition { get; set; }
+}
+
+public class Forecast
+{
+[JsonPropertyName("forecastday")]
+public ForecastDay[]? Forecastday { get; set; }
+}
+
+public class ForecastDay
+{
+[JsonPropertyName("date")]
+public string? Date { get; set; }
+
+[JsonPropertyName("day")]
+public Day? Day { get; set; }
+}
+
+public class Day
+{
+[JsonPropertyName("avgtemp_c")]
+public float? AvgtempC { get; set; }
+
+[JsonPropertyName("avgtemp_f")]
+public float? AvgtempF { get; set; }
+
+[JsonPropertyName("condition")]
+public Condition? Condition { get; set; }
+}
+
+public class Condition
+{
+[JsonPropertyName("text")]
+public string? Text { get; set; }
+
+[JsonPropertyName("icon")]
+public string? Icon { get; set; }
+}
+}

@@ -1,0 +1,41 @@
+@inherits LayoutComponentBase
+@* Required *@
+<MudThemeProvider />
+<MudPopoverProvider />
+
+@* Needed for dialogs *@
+<MudDialogProvider />
+
+@* Needed for snackbars *@
+<MudSnackbarProvider />
+
+<div class="page">
+    <div class="sidebar">
+        <NavMenu />
+    </div>
+
+    <main>
+        <article class="content px-4">
+            @Body
+        </article>
+    </main>
+</div>
+
+<div id="blazor-error-ui">
+    An unhandled error has occurred.
+    <a href="" class="reload">Reload</a>
+    <a href="" class="dismiss">🗙</a>
+</div>
+
+<style>
+    .top-row {
+        position: relative; /* Allow absolute positioning inside */
+    }
+
+    .top-right-corner {
+        position: absolute; /* Position buttons in the top right corner */
+        top: 0; /* Align to the top */
+        right: 0; /* Align to the right */
+        gap: 10px; /* Space between buttons */
+    }
+</style>

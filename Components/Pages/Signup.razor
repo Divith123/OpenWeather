@@ -1,0 +1,60 @@
+﻿@page "/signup"
+@rendermode InteractiveServer
+
+@using LiveWeather.DatabaseController
+@inject NavigationManager NavigationManager
+@inject DatabaseController db
+@using LiveWeather.Models
+@using LiveWeather.Singletons
+@inject UserStateManager UserState
+
+<MudContainer MaxWidth="MaxWidth.Small" Class="mt-5">
+    <MudPaper Elevation="4" Class="p-4">
+        <MudTypography Variant="h5" Align="Center">Sign Up</MudTypography>
+
+        <MudTextField 
+            Label="Email" 
+            @bind-Value="email" 
+            Placeholder="Enter email" 
+            Type="email" 
+            Required="true" />
+
+        <MudTextField 
+            Label="Password" 
+            @bind-Value="password" 
+            Placeholder="Enter password" 
+            Type="password" 
+            Required="true" />
+
+        <MudButton Color="Color.Primary" Variant="Variant.Filled" FullWidth @onclick="SignupUser">
+            Sign Up
+        </MudButton>
+
+        <MudTypography Align="Center" Class="mt-2">
+            Already have an account? <MudNavLink Href="/login" Color="Color.Primary">Login here</MudNavLink>
+        </MudTypography>
+    </MudPaper>
+</MudContainer>
+
+@code {
+    private string email = "";
+    private string password = "";
+
+    private async Task SignupUser()
+    {
+        User user = new User(email, password, []);
+
+        User newUser = await db.CreateAccount(user);
+
+        if (newUser != null)
+        {
+            UserState.SetUser(newUser);
+            NavigationManager.NavigateTo("/welcome");
+        }
+        else
+        {
+            // Handle signup failure
+            // You can show an error message here if desired
+        }
+    }
+}

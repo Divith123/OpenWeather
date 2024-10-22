@@ -1,0 +1,49 @@
+{
+  "Files": [
+    {
+      "Id": "/home/suzume/NINJA/WiseWork/LiveWeather/wwwroot/app.css",
+      "PackagePath": "staticwebassets/app.css"
+    },
+    {
+      "Id": "/home/suzume/NINJA/WiseWork/LiveWeather/wwwroot/background.jpg",
+      "PackagePath": "staticwebassets/background.jpg"
+    },
+    {
+      "Id": "/home/suzume/NINJA/WiseWork/LiveWeather/wwwroot/bootstrap/bootstrap.min.css",
+      "PackagePath": "staticwebassets/bootstrap/bootstrap.min.css"
+    },
+    {
+      "Id": "/home/suzume/NINJA/WiseWork/LiveWeather/wwwroot/bootstrap/bootstrap.min.css.map",
+      "PackagePath": "staticwebassets/bootstrap/bootstrap.min.css.map"
+    },
+    {
+      "Id": "/home/suzume/NINJA/WiseWork/LiveWeather/wwwroot/favicon.ico",
+      "PackagePath": "staticwebassets/favicon.ico"
+    },
+    {
+      "Id": "/home/suzume/NINJA/WiseWork/LiveWeather/wwwroot/favicon.png",
+      "PackagePath": "staticwebassets/favicon.png"
+    },
+    {
+      "Id": "/home/suzume/NINJA/WiseWork/LiveWeather/wwwroot/index.html",
+      "PackagePath": "staticwebassets/index.html"
+    },
+    {
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.LiveWeather.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.build.LiveWeather.props",
+      "PackagePath": "build\\LiveWeather.props"
+    },
+    {
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.buildMultiTargeting.LiveWeather.props",
+      "PackagePath": "buildMultiTargeting\\LiveWeather.props"
+    },
+    {
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.buildTransitive.LiveWeather.props",
+      "PackagePath": "buildTransitive\\LiveWeather.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

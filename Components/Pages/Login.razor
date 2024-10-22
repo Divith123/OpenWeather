@@ -1,0 +1,67 @@
+﻿@page "/login"
+@rendermode InteractiveServer
+
+@using LiveWeather.DatabaseController
+@inject NavigationManager NavigationManager
+@inject DatabaseController db
+@using LiveWeather.Models
+@using LiveWeather.Singletons
+@inject UserStateManager UserState
+
+<MudContainer MaxWidth="MaxWidth.Small" Class="mt-5">
+    <MudPaper Elevation="4" Class="p-4">
+        <MudTypography Variant="h5" Align="Center">Login</MudTypography>
+
+        <MudTextField 
+            Label="Email" 
+            @bind-Value="email" 
+            Placeholder="Enter email" 
+            Type="email" 
+            Required="true" />
+
+        <MudTextField 
+            Label="Password" 
+            @bind-Value="password" 
+            Placeholder="Enter password" 
+            Type="password" 
+            Required="true" />
+
+        <MudButton Color="Color.Primary" Variant="Variant.Filled" FullWidth @onclick="LoginUser">
+            Login
+        </MudButton>
+
+        <MudTypography Align="Center" Class="mt-2">
+            Don't have an account? <MudNavLink Href="/signup" Color="Color.Primary">Sign up here</MudNavLink>
+        </MudTypography>
+    </MudPaper>
+</MudContainer>
+
+@code {
+    private string email = "";
+    private string password = "";
+
+    private async Task LoginUser()
+    {
+        User newUser = await db.GetUserByEmail(email);
+
+        if (newUser != null)
+        {
+            bool success = newUser.Password == password;
+            if (success)
+            {
+                UserState.SetUser(newUser);
+                NavigationManager.NavigateTo("/welcome");
+            }
+            else
+            {
+                // Handle incorrect password
+                throw new Exception("Incorrect password");
+            }
+        }
+        else
+        {
+            // Handle user not found
+            throw new Exception("User not found");
+        }
+    }
+}

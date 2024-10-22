@@ -1,0 +1,42 @@
+﻿@using MudBlazor
+@using LiveWeather.Singletons
+@inject UserStateManager userState
+@implements IDisposable
+
+<div class="breadcrumbs-container">
+    <MudBreadcrumbs Items="_items"></MudBreadcrumbs>
+</div>
+
+@code {
+    private List<BreadcrumbItem> _items = new List<BreadcrumbItem>
+    {
+        new BreadcrumbItem("Home", href: "/welcome", icon: Icons.Material.Filled.Home),
+        new BreadcrumbItem("Check Weather", href: "/check", icon: Icons.Material.Filled.Cloud),
+        new BreadcrumbItem("Login", href: "/signup", icon: Icons.Material.Filled.SupervisedUserCircle),
+        new BreadcrumbItem("Source", href: "https://github.com/Divith123/OpenWeather/", icon: Icons.Material.Filled.Source),
+    };
+
+    protected override void OnInitialized()
+    {
+        userState.OnChange += StateHasChanged; // Subscribe to changes
+
+        // Add Favourites to breadcrumbs if the user is logged in
+        if (userState.IsLoggedIn())
+        {
+            _items.Add(new BreadcrumbItem("Favourites", href: "/favourites", icon: Icons.Material.Filled.Favorite));
+        }
+    }
+
+    public void Dispose()
+    {
+        userState.OnChange -= StateHasChanged; // Unsubscribe to avoid memory leaks
+    }
+}
+
+<style>
+    .breadcrumbs-container {
+        display: flex; /* Use flexbox for centering */
+        justify-content: center; /* Center horizontally */
+        margin: 20px 0; /* Optional: Add some vertical spacing */
+    }
+</style>

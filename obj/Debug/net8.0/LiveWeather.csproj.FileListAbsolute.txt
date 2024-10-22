@@ -1,0 +1,185 @@
+D:/WISE WORK/LiveWeather/bin/Debug/net8.0/output/web.config
+D:/WISE WORK/LiveWeather/bin/Debug/net8.0/appsettings.Development.json
+D:/WISE WORK/LiveWeather/bin/Debug/net8.0/appsettings.json
+D:/WISE WORK/LiveWeather/bin/Debug/net8.0/output/appsettings.Development.json
+D:/WISE WORK/LiveWeather/bin/Debug/net8.0/output/appsettings.json
+D:/WISE WORK/LiveWeather/bin/Debug/net8.0/output/LiveWeather.json
+D:/WISE WORK/LiveWeather/bin/Debug/net8.0/output/LiveWeather.runtimeconfig.json
+D:/WISE WORK/LiveWeather/bin/Debug/net8.0/LiveWeather.staticwebassets.runtime.json
+D:/WISE WORK/LiveWeather/bin/Debug/net8.0/LiveWeather.exe
+D:/WISE WORK/LiveWeather/bin/Debug/net8.0/LiveWeather.deps.json
+D:/WISE WORK/LiveWeather/bin/Debug/net8.0/LiveWeather.runtimeconfig.json
+D:/WISE WORK/LiveWeather/bin/Debug/net8.0/LiveWeather.dll
+D:/WISE WORK/LiveWeather/bin/Debug/net8.0/LiveWeather.pdb
+D:/WISE WORK/LiveWeather/obj/Debug/net8.0/LiveWeather.GeneratedMSBuildEditorConfig.editorconfig
+D:/WISE WORK/LiveWeather/obj/Debug/net8.0/LiveWeather.AssemblyInfoInputs.cache
+D:/WISE WORK/LiveWeather/obj/Debug/net8.0/LiveWeather.AssemblyInfo.cs
+D:/WISE WORK/LiveWeather/obj/Debug/net8.0/LiveWeather.csproj.CoreCompileInputs.cache
+D:/WISE WORK/LiveWeather/obj/Debug/net8.0/LiveWeather.MvcApplicationPartsAssemblyInfo.cache
+D:/WISE WORK/LiveWeather/obj/Debug/net8.0/LiveWeather.sourcelink.json
+D:/WISE WORK/LiveWeather/obj/Debug/net8.0/staticwebassets.build.json
+D:/WISE WORK/LiveWeather/obj/Debug/net8.0/staticwebassets.development.json
+D:/WISE WORK/LiveWeather/obj/Debug/net8.0/staticwebassets/msbuild.LiveWeather.Microsoft.AspNetCore.StaticWebAssets.props
+D:/WISE WORK/LiveWeather/obj/Debug/net8.0/staticwebassets/msbuild.build.LiveWeather.props
+D:/WISE WORK/LiveWeather/obj/Debug/net8.0/staticwebassets/msbuild.buildMultiTargeting.LiveWeather.props
+D:/WISE WORK/LiveWeather/obj/Debug/net8.0/staticwebassets/msbuild.buildTransitive.LiveWeather.props
+D:/WISE WORK/LiveWeather/obj/Debug/net8.0/staticwebassets.pack.json
+D:/WISE WORK/LiveWeather/obj/Debug/net8.0/scopedcss/Components/Layout/MainLayout.razor.rz.scp.css
+D:/WISE WORK/LiveWeather/obj/Debug/net8.0/scopedcss/Components/Layout/NavMenu.razor.rz.scp.css
+D:/WISE WORK/LiveWeather/obj/Debug/net8.0/scopedcss/bundle/LiveWeather.styles.css
+D:/WISE WORK/LiveWeather/obj/Debug/net8.0/scopedcss/projectbundle/LiveWeather.bundle.scp.css
+D:/WISE WORK/LiveWeather/obj/Debug/net8.0/LiveWeather.dll
+D:/WISE WORK/LiveWeather/obj/Debug/net8.0/refint/LiveWeather.dll
+D:/WISE WORK/LiveWeather/obj/Debug/net8.0/LiveWeather.pdb
+D:/WISE WORK/LiveWeather/obj/Debug/net8.0/LiveWeather.genruntimeconfig.cache
+D:/WISE WORK/LiveWeather/obj/Debug/net8.0/ref/LiveWeather.dll
+D:/WISE WORK/New folder/liveweather/bin/Debug/net8.0/appsettings.Development.json
+D:/WISE WORK/New folder/liveweather/bin/Debug/net8.0/appsettings.json
+D:/WISE WORK/New folder/liveweather/bin/Debug/net8.0/output/web.config
+D:/WISE WORK/New folder/liveweather/bin/Debug/net8.0/output/appsettings.Development.json
+D:/WISE WORK/New folder/liveweather/bin/Debug/net8.0/output/appsettings.json
+D:/WISE WORK/New folder/liveweather/bin/Debug/net8.0/output/LiveWeather.json
+D:/WISE WORK/New folder/liveweather/bin/Debug/net8.0/output/LiveWeather.runtimeconfig.json
+D:/WISE WORK/New folder/liveweather/bin/Debug/net8.0/LiveWeather.staticwebassets.runtime.json
+D:/WISE WORK/New folder/liveweather/bin/Debug/net8.0/LiveWeather.exe
+D:/WISE WORK/New folder/liveweather/bin/Debug/net8.0/LiveWeather.deps.json
+D:/WISE WORK/New folder/liveweather/bin/Debug/net8.0/LiveWeather.runtimeconfig.json
+D:/WISE WORK/New folder/liveweather/bin/Debug/net8.0/LiveWeather.dll
+D:/WISE WORK/New folder/liveweather/bin/Debug/net8.0/LiveWeather.pdb
+D:/WISE WORK/New folder/liveweather/obj/Debug/net8.0/LiveWeather.GeneratedMSBuildEditorConfig.editorconfig
+D:/WISE WORK/New folder/liveweather/obj/Debug/net8.0/LiveWeather.AssemblyInfoInputs.cache
+D:/WISE WORK/New folder/liveweather/obj/Debug/net8.0/LiveWeather.AssemblyInfo.cs
+D:/WISE WORK/New folder/liveweather/obj/Debug/net8.0/LiveWeather.csproj.CoreCompileInputs.cache
+D:/WISE WORK/New folder/liveweather/obj/Debug/net8.0/LiveWeather.MvcApplicationPartsAssemblyInfo.cache
+D:/WISE WORK/New folder/liveweather/obj/Debug/net8.0/LiveWeather.sourcelink.json
+D:/WISE WORK/New folder/liveweather/obj/Debug/net8.0/staticwebassets.build.json
+D:/WISE WORK/New folder/liveweather/obj/Debug/net8.0/staticwebassets.development.json
+D:/WISE WORK/New folder/liveweather/obj/Debug/net8.0/staticwebassets/msbuild.LiveWeather.Microsoft.AspNetCore.StaticWebAssets.props
+D:/WISE WORK/New folder/liveweather/obj/Debug/net8.0/staticwebassets/msbuild.build.LiveWeather.props
+D:/WISE WORK/New folder/liveweather/obj/Debug/net8.0/staticwebassets/msbuild.buildMultiTargeting.LiveWeather.props
+D:/WISE WORK/New folder/liveweather/obj/Debug/net8.0/staticwebassets/msbuild.buildTransitive.LiveWeather.props
+D:/WISE WORK/New folder/liveweather/obj/Debug/net8.0/staticwebassets.pack.json
+D:/WISE WORK/New folder/liveweather/obj/Debug/net8.0/scopedcss/Components/Layout/MainLayout.razor.rz.scp.css
+D:/WISE WORK/New folder/liveweather/obj/Debug/net8.0/scopedcss/Components/Layout/NavMenu.razor.rz.scp.css
+D:/WISE WORK/New folder/liveweather/obj/Debug/net8.0/scopedcss/bundle/LiveWeather.styles.css
+D:/WISE WORK/New folder/liveweather/obj/Debug/net8.0/scopedcss/projectbundle/LiveWeather.bundle.scp.css
+D:/WISE WORK/New folder/liveweather/obj/Debug/net8.0/LiveWeather.dll
+D:/WISE WORK/New folder/liveweather/obj/Debug/net8.0/refint/LiveWeather.dll
+D:/WISE WORK/New folder/liveweather/obj/Debug/net8.0/LiveWeather.pdb
+D:/WISE WORK/New folder/liveweather/obj/Debug/net8.0/LiveWeather.genruntimeconfig.cache
+D:/WISE WORK/New folder/liveweather/obj/Debug/net8.0/ref/LiveWeather.dll
+D:/wisework(off)/LiveWeather/bin/Debug/net8.0/output/web.config
+D:/wisework(off)/LiveWeather/bin/Debug/net8.0/appsettings.Development.json
+D:/wisework(off)/LiveWeather/bin/Debug/net8.0/appsettings.json
+D:/wisework(off)/LiveWeather/bin/Debug/net8.0/output/appsettings.Development.json
+D:/wisework(off)/LiveWeather/bin/Debug/net8.0/output/appsettings.json
+D:/wisework(off)/LiveWeather/bin/Debug/net8.0/output/LiveWeather.json
+D:/wisework(off)/LiveWeather/bin/Debug/net8.0/output/LiveWeather.runtimeconfig.json
+D:/wisework(off)/LiveWeather/bin/Debug/net8.0/LiveWeather.staticwebassets.runtime.json
+D:/wisework(off)/LiveWeather/bin/Debug/net8.0/LiveWeather.exe
+D:/wisework(off)/LiveWeather/bin/Debug/net8.0/LiveWeather.deps.json
+D:/wisework(off)/LiveWeather/bin/Debug/net8.0/LiveWeather.runtimeconfig.json
+D:/wisework(off)/LiveWeather/bin/Debug/net8.0/LiveWeather.dll
+D:/wisework(off)/LiveWeather/bin/Debug/net8.0/LiveWeather.pdb
+D:/wisework(off)/LiveWeather/bin/Debug/net8.0/Microsoft.AspNetCore.Components.WebAssembly.dll
+D:/wisework(off)/LiveWeather/bin/Debug/net8.0/Microsoft.JSInterop.WebAssembly.dll
+D:/wisework(off)/LiveWeather/obj/Debug/net8.0/LiveWeather.csproj.AssemblyReference.cache
+D:/wisework(off)/LiveWeather/obj/Debug/net8.0/LiveWeather.GeneratedMSBuildEditorConfig.editorconfig
+D:/wisework(off)/LiveWeather/obj/Debug/net8.0/LiveWeather.AssemblyInfoInputs.cache
+D:/wisework(off)/LiveWeather/obj/Debug/net8.0/LiveWeather.AssemblyInfo.cs
+D:/wisework(off)/LiveWeather/obj/Debug/net8.0/LiveWeather.csproj.CoreCompileInputs.cache
+D:/wisework(off)/LiveWeather/obj/Debug/net8.0/LiveWeather.MvcApplicationPartsAssemblyInfo.cache
+D:/wisework(off)/LiveWeather/obj/Debug/net8.0/LiveWeather.sourcelink.json
+D:/wisework(off)/LiveWeather/obj/Debug/net8.0/staticwebassets.build.json
+D:/wisework(off)/LiveWeather/obj/Debug/net8.0/staticwebassets.development.json
+D:/wisework(off)/LiveWeather/obj/Debug/net8.0/staticwebassets/msbuild.LiveWeather.Microsoft.AspNetCore.StaticWebAssets.props
+D:/wisework(off)/LiveWeather/obj/Debug/net8.0/staticwebassets/msbuild.build.LiveWeather.props
+D:/wisework(off)/LiveWeather/obj/Debug/net8.0/staticwebassets/msbuild.buildMultiTargeting.LiveWeather.props
+D:/wisework(off)/LiveWeather/obj/Debug/net8.0/staticwebassets/msbuild.buildTransitive.LiveWeather.props
+D:/wisework(off)/LiveWeather/obj/Debug/net8.0/staticwebassets.pack.json
+D:/wisework(off)/LiveWeather/obj/Debug/net8.0/scopedcss/Components/Layout/MainLayout.razor.rz.scp.css
+D:/wisework(off)/LiveWeather/obj/Debug/net8.0/scopedcss/Components/Layout/NavMenu.razor.rz.scp.css
+D:/wisework(off)/LiveWeather/obj/Debug/net8.0/scopedcss/bundle/LiveWeather.styles.css
+D:/wisework(off)/LiveWeather/obj/Debug/net8.0/scopedcss/projectbundle/LiveWeather.bundle.scp.css
+D:/wisework(off)/LiveWeather/obj/Debug/net8.0/LiveWeat.9F3D4B88.Up2Date
+D:/wisework(off)/LiveWeather/obj/Debug/net8.0/LiveWeather.dll
+D:/wisework(off)/LiveWeather/obj/Debug/net8.0/refint/LiveWeather.dll
+D:/wisework(off)/LiveWeather/obj/Debug/net8.0/LiveWeather.pdb
+D:/wisework(off)/LiveWeather/obj/Debug/net8.0/LiveWeather.genruntimeconfig.cache
+D:/wisework(off)/LiveWeather/obj/Debug/net8.0/ref/LiveWeather.dll
+D:/WISE WORK/liveweather/bin/Debug/net8.0/Microsoft.AspNetCore.Components.WebAssembly.dll
+D:/WISE WORK/liveweather/bin/Debug/net8.0/Microsoft.JSInterop.WebAssembly.dll
+D:/WISE WORK/liveweather/obj/Debug/net8.0/LiveWeather.csproj.AssemblyReference.cache
+D:/WISE WORK/liveweather/obj/Debug/net8.0/LiveWeat.9F3D4B88.Up2Date
+D:/wisework(off)/liveweather/bin/Debug/net8.0/DnsClient.dll
+D:/wisework(off)/liveweather/bin/Debug/net8.0/MongoDB.Bson.dll
+D:/wisework(off)/liveweather/bin/Debug/net8.0/MongoDB.Driver.dll
+D:/wisework(off)/liveweather/bin/Debug/net8.0/SharpCompress.dll
+D:/wisework(off)/liveweather/bin/Debug/net8.0/Snappier.dll
+D:/wisework(off)/liveweather/bin/Debug/net8.0/ZstdSharp.dll
+D:/wisework(off)/liveweather/bin/Debug/net8.0/Microsoft.AspNetCore.Authorization.dll
+D:/wisework(off)/liveweather/bin/Debug/net8.0/Microsoft.AspNetCore.Components.dll
+D:/wisework(off)/liveweather/bin/Debug/net8.0/Microsoft.AspNetCore.Components.Forms.dll
+D:/wisework(off)/liveweather/bin/Debug/net8.0/Microsoft.AspNetCore.Components.Web.dll
+D:/wisework(off)/liveweather/bin/Debug/net8.0/Microsoft.AspNetCore.Metadata.dll
+D:/wisework(off)/liveweather/bin/Debug/net8.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll
+D:/wisework(off)/liveweather/bin/Debug/net8.0/Microsoft.Extensions.Localization.dll
+D:/wisework(off)/liveweather/bin/Debug/net8.0/Microsoft.Extensions.Localization.Abstractions.dll
+D:/wisework(off)/liveweather/bin/Debug/net8.0/Microsoft.Extensions.Logging.Abstractions.dll
+D:/wisework(off)/liveweather/bin/Debug/net8.0/Microsoft.Extensions.Options.dll
+D:/wisework(off)/liveweather/bin/Debug/net8.0/Microsoft.JSInterop.dll
+D:/wisework(off)/liveweather/bin/Debug/net8.0/MudBlazor.dll
+/home/suzume/NINJA/WiseWork/LiveWeather/bin/Debug/net8.0/appsettings.Development.json
+/home/suzume/NINJA/WiseWork/LiveWeather/bin/Debug/net8.0/appsettings.json
+/home/suzume/NINJA/WiseWork/LiveWeather/bin/Debug/net8.0/output/web.config
+/home/suzume/NINJA/WiseWork/LiveWeather/bin/Debug/net8.0/output/appsettings.Development.json
+/home/suzume/NINJA/WiseWork/LiveWeather/bin/Debug/net8.0/output/appsettings.json
+/home/suzume/NINJA/WiseWork/LiveWeather/bin/Debug/net8.0/output/LiveWeather.json
+/home/suzume/NINJA/WiseWork/LiveWeather/bin/Debug/net8.0/output/LiveWeather.runtimeconfig.json
+/home/suzume/NINJA/WiseWork/LiveWeather/bin/Debug/net8.0/LiveWeather.staticwebassets.runtime.json
+/home/suzume/NINJA/WiseWork/LiveWeather/bin/Debug/net8.0/LiveWeather
+/home/suzume/NINJA/WiseWork/LiveWeather/bin/Debug/net8.0/LiveWeather.deps.json
+/home/suzume/NINJA/WiseWork/LiveWeather/bin/Debug/net8.0/LiveWeather.runtimeconfig.json
+/home/suzume/NINJA/WiseWork/LiveWeather/bin/Debug/net8.0/LiveWeather.dll
+/home/suzume/NINJA/WiseWork/LiveWeather/bin/Debug/net8.0/LiveWeather.pdb
+/home/suzume/NINJA/WiseWork/LiveWeather/bin/Debug/net8.0/DnsClient.dll
+/home/suzume/NINJA/WiseWork/LiveWeather/bin/Debug/net8.0/Microsoft.AspNetCore.Authorization.dll
+/home/suzume/NINJA/WiseWork/LiveWeather/bin/Debug/net8.0/Microsoft.AspNetCore.Components.dll
+/home/suzume/NINJA/WiseWork/LiveWeather/bin/Debug/net8.0/Microsoft.AspNetCore.Components.Forms.dll
+/home/suzume/NINJA/WiseWork/LiveWeather/bin/Debug/net8.0/Microsoft.AspNetCore.Components.Web.dll
+/home/suzume/NINJA/WiseWork/LiveWeather/bin/Debug/net8.0/Microsoft.AspNetCore.Components.WebAssembly.dll
+/home/suzume/NINJA/WiseWork/LiveWeather/bin/Debug/net8.0/Microsoft.AspNetCore.Metadata.dll
+/home/suzume/NINJA/WiseWork/LiveWeather/bin/Debug/net8.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll
+/home/suzume/NINJA/WiseWork/LiveWeather/bin/Debug/net8.0/Microsoft.Extensions.Localization.dll
+/home/suzume/NINJA/WiseWork/LiveWeather/bin/Debug/net8.0/Microsoft.Extensions.Localization.Abstractions.dll
+/home/suzume/NINJA/WiseWork/LiveWeather/bin/Debug/net8.0/Microsoft.Extensions.Logging.Abstractions.dll
+/home/suzume/NINJA/WiseWork/LiveWeather/bin/Debug/net8.0/Microsoft.Extensions.Options.dll
+/home/suzume/NINJA/WiseWork/LiveWeather/bin/Debug/net8.0/Microsoft.JSInterop.dll
+/home/suzume/NINJA/WiseWork/LiveWeather/bin/Debug/net8.0/Microsoft.JSInterop.WebAssembly.dll
+/home/suzume/NINJA/WiseWork/LiveWeather/bin/Debug/net8.0/MongoDB.Bson.dll
+/home/suzume/NINJA/WiseWork/LiveWeather/bin/Debug/net8.0/MongoDB.Driver.dll
+/home/suzume/NINJA/WiseWork/LiveWeather/bin/Debug/net8.0/MudBlazor.dll
+/home/suzume/NINJA/WiseWork/LiveWeather/bin/Debug/net8.0/SharpCompress.dll
+/home/suzume/NINJA/WiseWork/LiveWeather/bin/Debug/net8.0/Snappier.dll
+/home/suzume/NINJA/WiseWork/LiveWeather/bin/Debug/net8.0/ZstdSharp.dll
+/home/suzume/NINJA/WiseWork/LiveWeather/obj/Debug/net8.0/LiveWeather.csproj.AssemblyReference.cache
+/home/suzume/NINJA/WiseWork/LiveWeather/obj/Debug/net8.0/LiveWeather.GeneratedMSBuildEditorConfig.editorconfig
+/home/suzume/NINJA/WiseWork/LiveWeather/obj/Debug/net8.0/LiveWeather.AssemblyInfoInputs.cache
+/home/suzume/NINJA/WiseWork/LiveWeather/obj/Debug/net8.0/LiveWeather.AssemblyInfo.cs
+/home/suzume/NINJA/WiseWork/LiveWeather/obj/Debug/net8.0/LiveWeather.csproj.CoreCompileInputs.cache
+/home/suzume/NINJA/WiseWork/LiveWeather/obj/Debug/net8.0/LiveWeather.MvcApplicationPartsAssemblyInfo.cache
+/home/suzume/NINJA/WiseWork/LiveWeather/obj/Debug/net8.0/LiveWeather.sourcelink.json
+/home/suzume/NINJA/WiseWork/LiveWeather/obj/Debug/net8.0/staticwebassets.build.json
+/home/suzume/NINJA/WiseWork/LiveWeather/obj/Debug/net8.0/staticwebassets.development.json
+/home/suzume/NINJA/WiseWork/LiveWeather/obj/Debug/net8.0/staticwebassets/msbuild.LiveWeather.Microsoft.AspNetCore.StaticWebAssets.props
+/home/suzume/NINJA/WiseWork/LiveWeather/obj/Debug/net8.0/staticwebassets/msbuild.build.LiveWeather.props
+/home/suzume/NINJA/WiseWork/LiveWeather/obj/Debug/net8.0/staticwebassets/msbuild.buildMultiTargeting.LiveWeather.props
+/home/suzume/NINJA/WiseWork/LiveWeather/obj/Debug/net8.0/staticwebassets/msbuild.buildTransitive.LiveWeather.props
+/home/suzume/NINJA/WiseWork/LiveWeather/obj/Debug/net8.0/staticwebassets.pack.json
+/home/suzume/NINJA/WiseWork/LiveWeather/obj/Debug/net8.0/scopedcss/bundle/LiveWeather.styles.css
+/home/suzume/NINJA/WiseWork/LiveWeather/obj/Debug/net8.0/LiveWeat.9F3D4B88.Up2Date
+/home/suzume/NINJA/WiseWork/LiveWeather/obj/Debug/net8.0/LiveWeather.dll
+/home/suzume/NINJA/WiseWork/LiveWeather/obj/Debug/net8.0/refint/LiveWeather.dll
+/home/suzume/NINJA/WiseWork/LiveWeather/obj/Debug/net8.0/LiveWeather.pdb
+/home/suzume/NINJA/WiseWork/LiveWeather/obj/Debug/net8.0/LiveWeather.genruntimeconfig.cache
+/home/suzume/NINJA/WiseWork/LiveWeather/obj/Debug/net8.0/ref/LiveWeather.dll

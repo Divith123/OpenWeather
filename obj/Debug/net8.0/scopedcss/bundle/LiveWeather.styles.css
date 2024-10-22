@@ -1,0 +1,244 @@
+/* _content/LiveWeather/Components/Layout/MainLayout.razor.rz.scp.css */
+/* Reset default margin */
+body[b-ix6upz0z4f] {
+    margin: 0;
+    overflow: hidden; /* Disable page scroll */
+}
+
+/* Page background setup */
+.page[b-ix6upz0z4f] {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    background-image: url('./background.jpg'); /* Ensure correct path */
+    background-size: cover;
+    background-position: center;
+    height: 100vh; /* Full page height */
+}
+
+/* Sidebar setup */
+.sidebar[b-ix6upz0z4f] {
+    background-color: #33333300; /* Transparent sidebar */
+    color: white; /* Ensure visibility on dark background */
+    width: 250px;
+    height: 100vh;
+    position: sticky;
+    top: 0;
+}
+
+/* Main section setup */
+main[b-ix6upz0z4f] {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    overflow-y: auto; /* Allow content scrolling within main */
+}
+
+/* Top navigation row */
+.top-row[b-ix6upz0z4f] {
+    background-color: #f7f7f700; /* Transparent top row */
+    border-bottom: 1px solid #d6d5d5;
+    justify-content: flex-end;
+    height: 3.5rem;
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+/* Top row links */
+.top-row a[b-ix6upz0z4f], .top-row .btn-link[b-ix6upz0z4f] {
+    white-space: nowrap;
+    margin-left: 1.5rem;
+    text-decoration: none;
+}
+
+/* Hover effect for top row links */
+.top-row a:hover[b-ix6upz0z4f], .top-row .btn-link:hover[b-ix6upz0z4f] {
+    text-decoration: underline;
+}
+
+/* Centered search box */
+.center-content[b-ix6upz0z4f] {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 250px; /* Fixed height to ensure no overflow */
+    margin: 20px 0; /* Space between top and dynamic content */
+}
+
+/* Input field styling */
+.center-content input[type="text"][b-ix6upz0z4f] {
+    border: none;
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 5px;
+    width: 300px; /* Adjust the width */
+    margin-right: 10px;
+}
+
+/* Button styling */
+.center-content button[b-ix6upz0z4f] {
+    background-color: #007bff; /* Button color */
+    border: none;
+    color: white;
+    padding: 10px 15px;
+    font-size: 1rem;
+    font-weight: bold; /* Bold button text */
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Article content for dynamic sections */
+article[b-ix6upz0z4f] {
+    padding: 20px;
+}
+
+/* Error UI styling */
+#blazor-error-ui[b-ix6upz0z4f] {
+    background: lightyellow;
+    bottom: 0;
+    box-shadow: 0 -1px 2px rgba(0, 0, 0, 0.2);
+    display: none;
+    left: 0;
+    padding: 0.6rem 1.25rem 0.7rem 1.25rem;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+}
+
+#blazor-error-ui .dismiss[b-ix6upz0z4f] {
+    cursor: pointer;
+    position: absolute;
+    right: 0.75rem;
+    top: 0.5rem;
+}
+/* _content/LiveWeather/Components/Layout/NavMenu.razor.rz.scp.css */
+/* Sidebar styles */
+.nav-scrollable[b-lv7vhghlv5] {
+    background: linear-gradient(to bottom, #1a1a2e, #16213e);
+    color: white;
+    height: 100vh;
+    padding-top: 1rem;
+}
+
+/* Navigation links */
+.nav-item .nav-link[b-lv7vhghlv5] {
+    display: flex;
+    align-items: center;
+    padding: 12px 20px;
+    margin: 10px 15px;
+    border-radius: 5px;
+    background-color: #2d2f36;
+    color: white;
+    border: 2px solid transparent;
+    transition: background-color 0.3s, border-color 0.3s, transform 0.2s;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 0.95rem;
+    position: relative;
+}
+
+/* Icon and text spacing */
+.nav-item .nav-link .icon[b-lv7vhghlv5] {
+    margin-right: 10px;
+    font-size: 1.25rem;
+}
+
+/* Active state */
+.nav-item .nav-link.active[b-lv7vhghlv5] {
+    background-color: #3e4149;
+    border-color: #f44336;
+}
+
+/* Hover effect - small shake and colored underline */
+.nav-item .nav-link:hover[b-lv7vhghlv5] {
+    background-color: #3e4149;
+    border-color: #ffffff;
+    transform: translateX(2px);
+}
+
+.nav-item .nav-link:hover[b-lv7vhghlv5]::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 100%;
+    background-color: #00ffcc; /* Highlight color for hover */
+    transition: width 0.3s ease;
+}
+
+/* Toggler button styles */
+.navbar-toggler[b-lv7vhghlv5] {
+    appearance: none;
+    cursor: pointer;
+    width: 3.5rem;
+    height: 2.5rem;
+    background-color: transparent;
+    border: none;
+    position: absolute;
+    top: 0.5rem;
+    right: 1rem;
+}
+
+.navbar-toggler:checked ~ .nav-scrollable[b-lv7vhghlv5] {
+    display: block;
+}
+
+/* Adjust navbar items for large screens */
+@media (min-width: 641px) {
+    .navbar-toggler[b-lv7vhghlv5] {
+        display: none;
+    }
+
+    .nav-scrollable[b-lv7vhghlv5] {
+        display: block;
+        height: calc(100vh - 3.5rem);
+        overflow-y: auto;
+        background: linear-gradient(to bottom, #1a1a2e, #16213e);
+    }
+}
+
+/* Button styles */
+.btn-premium[b-lv7vhghlv5] {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 12px;
+    margin: 10px 15px;
+    background-color: #2d2f36;
+    color: white;
+    border: 2px solid transparent;
+    border-radius: 4px;
+    text-align: left;
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s, transform 0.2s;
+    position: relative;
+}
+
+/* Hover effect for buttons */
+.btn-premium:hover[b-lv7vhghlv5] {
+    background-color: #3e4149;
+    border-color: #ffffff;
+    transform: translateX(2px);
+}
+
+.btn-premium:hover[b-lv7vhghlv5]::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 100%;
+    background-color: #00ffcc;
+    transition: width 0.3s ease;
+}
+
+/* Active button state */
+.btn-premium.active[b-lv7vhghlv5] {
+    background-color: #3e4149;
+    border-color: #f44336;
+}

@@ -1,0 +1,60 @@
+@page "/welcome"
+@using MudBlazor
+
+<MudContainer MaxWidth="MaxWidth.Large" Class="my-5">
+    <MudPaper Elevation="4" Class="p-4 text-center">
+        <MudText Typo="Typo.h3" GutterBottom>
+            Welcome to OpenWeather
+        </MudText>
+        <MudText Typo="Typo.body1" Color="Color.Info" Class="mb-4">
+            Your one-stop solution for accurate and real-time weather updates.
+        </MudText>
+
+        <MudGrid Justify="Justify.Center" Spacing="2">
+            <MudItem xs="12" sm="6" md="4">
+                <MudCard Elevation="5" Class="d-flex flex-column">
+                    <MudCardContent>
+                        <MudText Typo="Typo.h6" Color="Color.Primary" Class="font-weight-bold">🌦 Real-Time Updates</MudText>
+                        <MudText>Stay informed with live weather alerts and updates.</MudText>
+                    </MudCardContent>
+                    <MudCardActions>
+                        <MudButton Color="Color.Primary" Href="/check" Variant="Variant.Outlined" Size="Size.Medium" Class="mt-auto">Get Updates</MudButton>
+                    </MudCardActions>
+                </MudCard>
+            </MudItem>
+
+            <MudItem xs="12" sm="6" md="4">
+                <MudCard Elevation="5" Class="d-flex flex-column">
+                    <MudCardContent>
+                        <MudText Typo="Typo.h6" Color="Color.Primary" Class="font-weight-bold">🌍 Personalized Forecasts</MudText>
+                        <MudText>Receive weather forecasts tailored specifically for you.</MudText>
+                    </MudCardContent>
+                    <MudCardActions>
+                        <MudButton Color="Color.Primary" Href="/check" Variant="Variant.Outlined" Size="Size.Medium" Class="mt-auto">View Forecasts</MudButton>
+                    </MudCardActions>
+                </MudCard>
+            </MudItem>
+
+            <MudItem xs="12" sm="6" md="4">
+                <MudCard Elevation="5" Class="d-flex flex-column">
+                    <MudCardContent>
+                        <MudText Typo="Typo.h6" Color="Color.Primary" Class="font-weight-bold">🔍 Explore Features</MudText>
+                        <MudText>Discover an array of features to enhance your experience.</MudText>
+                    </MudCardContent>
+                    <MudCardActions>
+                        <MudButton Color="Color.Primary" Href="/features" Variant="Variant.Outlined" Size="Size.Medium" Class="mt-auto">Explore Now</MudButton>
+                    </MudCardActions>
+                </MudCard>
+            </MudItem>
+        </MudGrid>
+
+        <MudDivider Class="my-4" />
+
+        <MudButton Href="/check" Color="Color.Primary" Variant="Variant.Filled" Size="Size.Large" Class="mx-2">
+            Check Weather
+        </MudButton>
+        <MudButton Href="/signup" Color="Color.Secondary" Variant="Variant.Outlined" Size="Size.Large" Class="mx-2">
+            Sign Up
+        </MudButton>
+    </MudPaper>
+</MudContainer>

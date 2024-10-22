@@ -1,0 +1,69 @@
+﻿@page "/Favourites"
+@rendermode InteractiveServer
+
+@using LiveWeather.Singletons
+@inject UserStateManager userState
+@using MongoDB.Bson
+
+@using LiveWeather.Models
+@using LiveWeather.DatabaseController
+@inject DatabaseController weatherController
+
+@inject NavigationManager NavigationManager
+
+<PageTitle>Favourites</PageTitle>
+
+<MudText Typo="Typo.h3">Favourites</MudText>
+
+<MudTable T="@Favourite" Items="@favourites" Hover="true">
+    <HeaderContent>
+        <MudTh>City</MudTh>
+        <MudTh>Country</MudTh>
+        <MudTh></MudTh>
+        <MudTh></MudTh>
+    </HeaderContent>
+    <RowTemplate>
+        <MudTd DataLabel="City">@context.City</MudTd>
+        <MudTd DataLabel="Country">@context?.Country</MudTd>
+        <MudTd DataLabel="Favourite">
+            <MudButton Variant="Variant.Outlined" StartIcon="@Icons.Material.Filled.Favorite" Color="Color.Error" OnClick="@((e)=> RemoveFavourite(context?.City, userState.User.Id))">Remove Favourite</MudButton>       
+        </MudTd>
+        <MudTd DataLabel="Favourite">
+            <MudButton Variant="Variant.Filled" StartIcon="@Icons.Material.Filled.Cloud" Color="Color.Primary" OnClick="@((e)=> ViewWeather(context?.City))">View Weather</MudButton>
+        </MudTd>
+    </RowTemplate>
+</MudTable>
+
+
+@code 
+{
+    private List<Favourite>? favourites;
+
+    protected override void OnInitialized()
+    {
+        if (userState.User == null)
+        {
+            NavigationManager.NavigateTo("/login");
+            return;
+        }
+        
+        userState.OnChange += StateChange;
+        favourites = weatherController.GetFavourites(userState.User.Id).Result;
+    }
+
+    public void RemoveFavourite(string cityName, ObjectId userId)
+    {
+        Favourite favToRemove = weatherController.GetFavourite(cityName, userId).Result;
+        weatherController.RemoveFavourite(userState.User.Id, favToRemove);
+        favourites = weatherController.GetFavourites(userState.User.Id).Result;
+    }
+
+    public void ViewWeather(string city)
+    {
+        NavigationManager.NavigateTo("/Check/"+city);
+    }
+
+    private void StateChange() => InvokeAsync(StateHasChanged);
+
+    public void Dispose() => userState.OnChange -= StateChange;
+}
